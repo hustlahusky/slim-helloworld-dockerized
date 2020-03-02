@@ -11,9 +11,7 @@
 *~
 
 # Dotenv
-.env
-.env.*
-!.env.example
+.env*
 
 # OS or Editor folders
 .DS_Store
@@ -36,8 +34,22 @@ nbproject
 *.sql
 *.tar*
 
-# Project folders and files to ignore
-/coverage/
-/vendor/
+# Ignore all files that must not exist in result image
+.git
+.gitignore
+docker-compose*.yml
+Dockerfile
+.dockerignore
+.editorconfig
+.gitlab-ci.yml
+.travis.yml
+.coveralls.yml
+vendor
+node_modules
+bower_components
+README.md
+CONTRIBUTING.md
+.htaccess
+coverage
 /logs/*
 !/logs/README.md
